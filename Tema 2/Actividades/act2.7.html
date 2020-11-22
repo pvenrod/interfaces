@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+    
+            div#body {
+                margin: auto;
+                width: 710px;
+            }
+    
+            div#header, div#footer {
+                margin: 10px auto 10px auto;
+                width: 710px;
+                border-radius: 3px;
+            }
+
+            div#header {
+                border: 1px solid blue;
+            }
+
+            div#header div#div-logo {
+                float: left;
+            }
+
+            div#header div#div-logo img {
+                width: 100px;
+            }
+
+            div#header div#div-contenido-header {
+                padding-left: 115px;
+            }
+
+            div#footer {
+                border: 1px solid green;
+                clear: both; /* Si no se usa el estilo clear, se mezcla con el menú principal */
+            }
+    
+            div#sidebar {
+                display: none;
+                border: 1px dotted green; /* Si pongo 5px, la caja se mueve */
+                padding-left: 15px;
+            }
+    
+            body.main-sidebar div#main, body.sidebar-main div#main {
+                width: 490px;
+                border: 1px dotted #ccc;
+            }
+
+            body.main-sidebar div#main img, body.sidebar-main div#main img {
+                width: 400px;
+            }
+
+            body.main-sidebar div#sidebar, body.sidebar-main div#sidebar {
+                display: block;
+                width: 200px;
+            }
+    
+            body.main-sidebar div#main, body.main-sidebar div#sidebar {
+                float: left;
+            }
+    
+            body.sidebar-main div#main, body.sidebar-main div#sidebar {
+                float: right;
+            }
+    
+            div#sidebar a {
+                color: rgb(255, 102, 0);
+            }
+            div#sidebar a:hover {
+                color: rgb(175, 70, 0);
+            }
+            div#sidebar a:active {
+                color: rgb(183, 0, 255);
+            }
+            div#sidebar a:visited {
+                color: rgb(153, 117, 0);
+            }
+        </style>
+    </head>
+    <body class="sidebar-main">
+        <div id="header">
+            <div id="div-logo">
+                <img src="https://officialpsds.com/imageview/76/vy/76vy4n_large.png?1521316509">
+            </div>
+            <div id="div-contenido-header">
+                <h1>El muslito</h1>
+            </div>
+        </div>
+        <div id="body">
+            <div id="main">
+                <img src="https://officialpsds.com/imageview/76/vy/76vy4n_large.png?1521316509">
+            </div>
+            <div id="sidebar">
+                <a href="#asd">Menú del día</a><br>
+                <a href="#ffd">Entrantes</a><br>
+                <a href="#aasd">Postres</a><br>
+                <a href="#ggg">Sobre nosotros</a>
+            </div>
+        </div>   
+        <div id="footer">Footer. Restaurante: EL MUSLITO</div> 
+    </body>
+</html>
